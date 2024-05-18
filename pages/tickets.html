@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar tickets</title>
+    <link rel="shortcut icon" href="./ticket.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg container navbar-dark">
+            <a href="../index.html">
+                <img src="../assets/img/codoacodo.png" alt="Logo de Codo a Codo 4.0">            
+            </a>
+            <h2>Conf Bs As</h2>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                    <li class="nav-item">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html#conferencia">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html#oradores">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html#lugarFecha">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html#formularioOrador">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link activa" href="#">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="tarjetasTickets row justify-content-center">
+                <div class="tarjetaTickets azul card col-md-3" id="tarjetaEstudiante">
+                    <h3>
+                        Estudiante
+                    </h3>
+                    <p>Tienen un descuento</p>
+                    <p class="porcentajeDescuento">80%</p>
+                    <p class="terminos">* presentar documentación</p>
+                </div>
+                <div class="tarjetaTickets verde card col-md-3" id="tarjetaTrainee">
+                    <h3>
+                        Trainee
+                    </h3>
+                    <p>Tienen un descuento</p>
+                    <p class="porcentajeDescuento">50%</p>
+                    <p class="terminos">* presentar documentación</p>
+                </div>
+                <div class="tarjetaTickets naranja card col-md-3" id="tarjetaJunior">
+                    <h3>
+                        Junior
+                    </h3>
+                    <p>Tienen un descuento</p>
+                    <p class="porcentajeDescuento">15%</p>
+                    <p class="terminos">* presentar documentación</p>
+                </div>
+            </div>
+
+            <div class="titulos">
+                <h3>VENTA</h3>
+                <h2>VALOR DE TICKET $200</h2>
+            </div>
+
+            <form action="" class="row justify-content-center">
+                <div class="formularioTicket">
+                    <div class="row">
+                        <div class="col formTkNombre">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <div class="invalid-feedback" id="msgErrorNombre">
+                                Ingrese su nombre
+                            </div>
+                        </div>
+                        <div class="col formTkApellido">
+                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+                            <div class="invalid-feedback" id="msgErrorApellido">
+                                Ingrese su apellido
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+                        <div class="invalid-feedback" id="msgErrorCorreo">
+                            Ingrese un correo electrónico válido
+                        </div>
+                    </div>                                                        
+                    <div class="row cantCat">
+                        <div class="col formTkCantidad">
+                            <p>Cantidad</p>
+                            <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Cantidad" min="1" required>
+                            <div class="invalid-feedback" id="msgErrorCorreo">
+                                Ingrese la cantidad de tickets requerida
+                            </div>
+                        </div>
+                        <div class="col formTkCategoria">
+                            <p>Categoria</p>
+                            <select name="categoria" id="categoria">
+                                <option value="invitado">Invitado</option>
+                                <option selected value="estudiante">Estudiante</option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div>
+                    </div>                   
+                    <div class="totalAPagar">
+                        <p>Total a Pagar: $ <span id="totalPago"></span></p>
+                    </div>
+                    <div class="row">
+                        <div class="col formTkBotones botBorrar">
+                            <input type="reset" value="Borrar"  id="btnBorrar">     
+                        </div>
+                        <div class="col formTkBotones botResumen">
+                            <input type="button" value="Resumen" id="btnResumen">
+                        </div>
+                    </div> 
+                </div>
+            </form>
+        </section>      
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+                <div class="navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">Preguntas frecuentes</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">Contáctanos</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">Prensa</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">Conferencias</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">Términos y condiciones</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">Privacidad</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">Estudiantes</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tickets.js"></script>
+</body>
+</html>

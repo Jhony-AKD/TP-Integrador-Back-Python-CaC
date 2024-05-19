@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg container navbar-dark">
+            <a href="../index.html">
+                <img src="../assets/img/LogoDr.R.Aldana.JPG" alt="Logo del Dr. Ramon Aldana">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link colorVerde" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorVerde" href="./ozonoterapia.html">Ozonoterapia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorVerde" href="./plasma.html">Plasma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorVerde activa" href="#">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link colorVerde" href="./faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="titulos">
+                <h2>CONTACTO</h2>
+            </div>
+
+            <form action="" class="row justify-content-center" enctype="multipart/form-data">
+                <div class="formularioTicket">
+                    <div class="row">
+                        <div class="col formTkNombre">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <div class="invalid-feedback" id="msgErrorNombre">
+                                Ingrese su nombre
+                            </div>
+                        </div>
+                        <div class="col formTkApellido">
+                            <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required>
+                            <div class="invalid-feedback" id="msgErrorApellido">
+                                Ingrese su apellido
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo" required>
+                        <div class="invalid-feedback" id="msgErrorCorreo">
+                            Ingrese un correo electrónico válido
+                        </div>
+                    </div>
+                    <div class="row cantCat">
+                        <div class="col formTkCategoria">
+                            <p>Especialidad de interés</p>
+                            <select name="categoria" id="categoria">
+                                <option select>Ozonoterapia</option>
+                                <option>Plasma</option>
+                                <option>Ambas</option>
+                            </select>
+                        </div>
+                        <div class="col formTkCantidad">
+                            <p>Tipo de consulta:</p>
+                            <div>
+                                <label for="opcion1">
+                                    <input type="radio" id="opcion1" name="opcion" value="Opción 1" required>
+                                    Información
+                                </label>
+                            </div>
+                            <div>
+                                <label for="opcion2">
+                                    <input type="radio" id="opcion2" name="opcion" value="Opción 2">
+                                    Reserva de turno
+                                </label>
+                            </div>
+                            <div>
+                                <label for="opcion3">
+                                    <input type="radio" id="opcion3" name="opcion" value="Opción 3">
+                                    Post tratamiento
+                                </label>
+                            </div>
+                            <div>
+                                <label for="opcion4">
+                                    <input type="radio" id="opcion4" name="opcion" value="Opción 4">
+                                    Otra
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col formTkImagen">
+                            <p>Subir imagen:</p>
+                            <input type="file" class="form-control-file" id="imagen" name="imagen" accept="image/*" required>
+                            <div class="invalid-feedback" id="msgErrorImagen">
+                                Por favor, suba una imagen.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col formTkBotones botBorrar">
+                            <input id="btnBorrar" type="reset" value="Borrar">
+                        </div>
+                        <div class="col formTkBotones botResumen">
+                            <button id="btnResumen" type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>    
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-expand-md navbar-expand-sm">
+                <div class="navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">
+                                <i class="fab fa-snapchat"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/error404.html">
+                                <i class="fab fa-reddit"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/tickets.js"></script>
+</body>
+</html>

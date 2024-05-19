@@ -71,8 +71,8 @@ ul.lista {
   float: right;
 }
 
-
-/* #player{
-  width: 30vw;
-  height: 3vw;
-} */
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

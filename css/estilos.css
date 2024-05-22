@@ -9,10 +9,6 @@ header{
     background: linear-gradient(90deg,rgb(255, 255, 255) 30%, rgba(73, 169, 248, 0.779) 100%);
 }
 
-/* header h2{
-    font-size: 25px;
-} */
-
 header img{
     width: 130px;
 }
@@ -33,10 +29,6 @@ body {
 .navbar-dark .navbar-toggler {
     background-color: rgb(86, 145, 228);
 }
-
-/* .navbar-dark .navbar-nav .nav-link.colorVerde{
-    color:green;
-} */
 
 .navbar-dark .navbar-nav .nav-link.colorVerde:hover{
     color: white;
@@ -60,36 +52,6 @@ body {
     width: 100%;
     object-fit: cover; 
 }
-
-/* .quieroSerOrador{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    border: solid white 1px;
-    border-radius: 5%;    
-    padding: 10px;
-    margin: 5px;
-}
-
-.quieroSerOrador:hover{
-    background-color: rgba(255, 255, 255, 0.367);
-    color: rgb(10, 239, 67);
-} */
-
-/* .comprarTickets{
-    text-decoration: none;
-    color: white;
-    background-color: green;
-    border-radius: 5%;
-    font-size: 20px;
-    padding: 10px;
-    margin: 5px;
-}
-
-.comprarTickets:hover{
-    background-color: rgb(10, 239, 67);
-    color: white
-} */
 
 .oradores h2{
    margin: 15px;
@@ -154,18 +116,6 @@ body {
     margin-bottom: 0px;
 }
 
-/* .colorRojo{
-    background-color: red;
-    color: white;
-    border-radius: 10%;
-    font-size: 1rem;
-    font-weight: bold;
-    display: inline-block;
-    padding: 3px;
-    margin-top: 30px;
-    margin-bottom: 0px;
-} */
-
 .tituloNombre{
     font-size: 25px;
 }
@@ -187,19 +137,6 @@ body {
 .lugar p{
     font-size: 14px;
 }
-
-/* .btnConoceMas{
-    text-decoration: none;
-    border: solid white 1px;
-    border-radius: 5%;
-    padding: 4px;
-    color: white;
-}
-
-.btnConoceMas:hover {
-    background-color: rgba(255, 255, 255, 0.367);
-    color: rgb(255, 255, 255);
-} */
 
 .encontranosEn{
     text-align: center;
@@ -280,8 +217,6 @@ body {
 }
 
 .footer a{
-    /* color: white; */
-    /* font-size: 16px; */
     width: 100px;
     height: 64px;
     margin: 5px 5vh;
@@ -332,80 +267,6 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
-/* .tarjetaTickets{
-    margin: 24px 3px 6px;
-    width: 18%;
-    text-align: center;
-    border-radius: 0;
-} */
-
-/* .tarjetaTickets h3{
-    margin-top: 26px;
-    margin-bottom: 16px;
-} */
-
-/* .tarjetaTickets p{
-    font-size: 18px;
-}
-
-.tarjetaTickets .porcentajeDescuento{
-    font-weight: bold;
-    margin: 2px;
-}
-
-.tarjetaTickets .terminos{
-    font-size: 14px;
-    color: gray;
-    margin-top: 16px;
-    margin-bottom: 24px;
-}
-
-.tarjetasTickets .azul{
-    border: solid blue 2px;
-}
-
-.tarjetasTickets .azul:hover{
-    background-color:lightskyblue;
-}
-
-.seleccionadaAzul{
-    background-color: lightskyblue;
-    box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
-}
-
-.tarjetasTickets .verde{
-    border: solid green 2px;
-}
-
-.tarjetasTickets .verde:hover{
-    background-color: lightgreen;
-}
-
-.seleccionadaVerde{
-    background-color: lightgreen;
-    box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
-}
-
-.tarjetasTickets .naranja{
-    border: solid orange 2px;
-}
-
-.tarjetasTickets .naranja:hover{
-    background-color: rgb(255, 215, 141);
-}
-
-.seleccionadaNaranja{
-    background-color: rgb(255, 215, 141);
-    box-shadow: 0px 0px 10px 0px rgba(4, 4, 4, 0.5);
-} */
-
-/* .titulos h3{
-    font-size: 14px;
-    margin: 0;
-    font-weight: normal;
-    text-align: center;
-} */
-
 .titulos h2{
     font-size: 38px;
     margin-top: 2px;
@@ -448,21 +309,6 @@ body {
 .formTkImagen{
     margin-bottom: 30px;
 }
-
-/* .totalAPagar{
-    height: 50px;
-    background-color: rgb(204, 229, 255);
-    border-radius: 5px;
-    margin: 34px auto 26px !important;
-    display: flex;
-    align-items:center;
-}
-
-.totalAPagar p{
-    padding-left: 30px;
-    margin: 0;
-    padding-right: 0;
-} */
 
 .formTkBotones input, .formTkBotones button{
     width: 97%;
@@ -578,10 +424,6 @@ body {
 
 @media screen and (max-width: 768px) {
 
-    /* header h2{
-        margin-right: 16% !important;
-    } */
-
     .navbar{
             padding-top: 0px;
     }
@@ -651,38 +493,11 @@ body {
     }
 
     /*Pagina "Contacto"*/
-
-    /* .tarjetaTickets{
-        margin: 18px 3px 6px;
-        width: 31%;
-        display: block;
-    }
-
-    .tarjetaTickets h3{
-        font-size: 14px;
-        margin-top: 16px;
-        margin-bottom: 6px;
-    }
-
-    .tarjetaTickets p{
-        font-size: 10px;
-        margin-bottom: 8px;
-    }
-
-    .tarjetaTickets .terminos{
-        font-size: 8px;
-        margin-top: 12px;
-        margin-bottom: 10px;
-    } */
     
     .formularioTicket{
         width: 100%;
         max-width: none;
     }
-    
-    /* .titulos h3{
-        font-size: 10px;
-    } */
 
     .titulos h2{
         font-size: 20px;
@@ -705,16 +520,6 @@ body {
         height: 30px;
         font-size: 12px;
     }
-
-    /* .totalAPagar{
-        height: 40px;
-        margin: 20px auto 20px !important;
-    }
-
-    .totalAPagar p{
-        padding: 16px;
-        font-size: 12px; 
-    } */
 
     .formTkBotones input, .formTkBotones button{
         height: 30px;
@@ -742,15 +547,6 @@ body {
 
 @media screen and (max-width: 389px) {
 
-    /* header h2{
-        margin-right: 6% !important;
-    } */
-
-    /* .conf{
-        text-align: center;
-        padding-top: 20%
-    } */
-
     .footer{
         height: auto;
     }
@@ -773,27 +569,6 @@ body {
 
      /*Pagina "Contacto"*/
 
-     /* .tarjetaTickets{
-        width: 30%;
-    }
-
-    .tarjetaTickets h3{
-        font-size: 12px;
-        margin-top: 12px;
-        margin-bottom: 6px;
-    }
-
-    .tarjetaTickets p{
-        font-size: 9px;
-        margin-bottom: 8px;
-    }
-
-    .tarjetaTickets .terminos{
-        font-size: 7px;
-        margin-top: 6px;
-        margin-bottom: 14px;
-    } */
-
     .formularioTicket input, .formularioTicket button{
         height: 24px;
     }
@@ -802,10 +577,6 @@ body {
         height: 24px;
         font-size: 12px;
     }
-
-    /* .totalAPagar{
-        height: 32px;
-    } */
 
     .formTkBotones input, .formTkBotones button{
         font-size: 12px;
@@ -816,11 +587,6 @@ body {
 
 @media (max-width: 1024px) and (orientation: landscape) {
 
-    /* header h2{
-        margin-right: 55%;
-        margin-top: 2%;
-    } */
-
     .navbar{
             padding-top: 0px;
     }
@@ -828,14 +594,6 @@ body {
     .navbar-nav{
         text-align: right;
     }
-
-    /* .quieroSerOrador{   
-        display: inline-block;
-    }
-
-    .comprarTickets{
-        display: inline-block;
-    } */
 
     .oradores{
         margin-left: 10%;
@@ -845,20 +603,6 @@ body {
         width: 28%;
         margin: 2%;
     }
-
-    /* .recuadrosFormulario input, textArea{
-        width: 45%;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    }
-
-    .recuadrosFormulario textarea{
-        width: 92.5%;
-    }
-
-    .recuadrosFormulario .btnEnviar{
-        width:92.5%;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    } */
     
     .publicidadCoto{
         margin: 30px 10px;
@@ -896,14 +640,6 @@ body {
 
     /*Pagina "Contacto"*/
 
-    /* .tarjetaTickets{
-        width: 31%;
-    }
-
-    .tarjetaTickets h3{
-        margin-top: 16px;
-    } */
-
     input::placeholder{
         font-size: 16px;
         padding-left: 6px;
@@ -922,16 +658,6 @@ body {
         height: 36px;
         font-size: 16px;
     }
-
-    /* .totalAPagar{
-        height: 46px;
-        margin: 24px auto 24px !important;
-    }
-
-    .totalAPagar p{
-        padding: 18px;
-        
-    } */
 
     .formTkBotones input, .formTkBotones button{
         font-size: 16px;
@@ -956,20 +682,6 @@ body {
 
 
 @media (max-width: 750px) and (orientation: landscape) {
-    
-    /* header h2{
-        margin-right: 40% !important;
-    } */
-
-    /* .quieroSerOrador{   
-        display: inline-block;
-        margin-right: 0;
-    }
-
-    .comprarTickets{
-        display: inline-block;
-        margin-right: 0;
-    } */
 
     .tarjeta{
         width: 30%;
@@ -991,11 +703,6 @@ body {
         margin-top: 3%;
         font-size:x-small;
     }
-
-    /* .colorRojo{
-        margin-top: 3%;
-        font-size:x-small;
-    } */
 
     .tituloNombre{
         font-size: large;
@@ -1019,26 +726,6 @@ body {
 
     /*Pagina "Contacto"*/
 
-    /* .tarjetaTickets h3{
-        font-size: 18px;
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-
-    .tarjetaTickets p{
-        font-size: 14px;
-        margin-bottom: 14px;
-    }
-
-    .tarjetaTickets .terminos{
-        font-size: 11px;
-        margin-bottom: 14px;
-    } */
-
-    /* .titulos h3{
-        font-size: 12px;
-    } */
-
     .titulos h2{
         font-size: 28px;
     }
@@ -1057,10 +744,6 @@ body {
         font-size: 14px;
         padding-left: 8px;
     }
-
-    /* .totalAPagar{
-        margin: 10px auto 20px !important;
-    } */
 
     .formTkBotones input, .formTkBotones button{
         font-size: 14px;

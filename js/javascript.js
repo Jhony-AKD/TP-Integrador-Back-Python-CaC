@@ -1,6 +1,6 @@
 const quitarClaseError = () => {
     let listaNodos = document.querySelectorAll(".form-control, .form-select");
-    for (let i=0;i<listaNodos.length;i++) {
+    for (let i=0; i<listaNodos.length; i++) {
         listaNodos[i].classList.remove("is-invalid");
     } 
 }
@@ -15,35 +15,41 @@ const enviar = () => {
     if (nombre.value === "") {
         nombre.classList.add("is-invalid");
         nombre.focus();
-        return;
+        return false;
     }
 
     if (apellido.value === "") {
         apellido.classList.add("is-invalid");
         apellido.focus();
-        return;
+        return false;
     }
 
     if (correo.value === "" || !validarCorreo(correo.value)) {
         correo.classList.add("is-invalid");
         correo.focus();
-        return;
+        return false;
     }
 
     if (imagen.value === "") {
         imagen.classList.add("is-invalid");
         imagen.focus();
-        return;
+        return false;
     }
+
+    // Si todos los campos están completos, el formulario se envía
+    return true;
 }
 
-btnResumen.addEventListener("click", enviar);
+btnResumen.addEventListener("click", (event) => {
+    // Verificar antes de enviar el formulario
+    if (!enviar()) {
+        event.preventDefault(); // Evitar que el formulario se envíe
+    }
+});
 
 const resetEnviar = () => {
     quitarClaseError();
     totalPago.innerHTML = "";
 }
 
- btnBorrar.addEventListener("click", resetEnviar);
-
- 
+btnBorrar.addEventListener("click", resetEnviar);

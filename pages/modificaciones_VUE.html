@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modificar Producto</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../static/css/estilos.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
@@ -85,7 +86,7 @@
                 <input type="number" step="0.01" id="precioModificar" v-model="precio" required><br>
 
                 <!-- Imagen actual del producto -->
-                <img v-if="imagen_url && !imagenSeleccionada" :src="'./static/imagenes/' + imagen_url"
+                <img v-if="imagen_url && !imagenSeleccionada" :src="'https://www.pythonanywhere.com/user/JhonyAKD/files/home/JhonyAKD/mysite/static/imagenes/' + imagen_url"
                     alt="Imagen del producto" style="max-width: 200px;">
                 
                 <!-- Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere -->
@@ -113,7 +114,7 @@
 
     <script src="https://unpkg.com/vue@3.0.0"></script>
     <script>
-        const URL = "http://127.0.0.1:5000/"
+        const URL = "https://jhonyakd.pythonanywhere.com/"
 
         //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
         //const URL = "https://USUARIO.pythonanywhere.com/"

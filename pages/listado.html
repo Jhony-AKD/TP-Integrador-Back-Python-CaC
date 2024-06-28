@@ -66,7 +66,7 @@
                 <th>Cantidad</th>                
                 <th align="right">Precio</th>
                 <th>Imagen</th>
-                <th align="right">Proveedor</th>
+                <th>Proveedor</th>
             </tr>
         </thead>
         <tbody id="tablaProductos"> </tbody>
@@ -104,7 +104,7 @@
                     let fila = document.createElement('tr'); //Crea una nueva fila de tabla (<tr>) para cada producto.
                     fila.innerHTML = '<td>' + producto.codigo + '</td>' +
                         '<td>' + producto.descripcion + '</td>' +
-                        '<td align="right">' + producto.cantidad + '</td>' +
+                        '<td>' + producto.cantidad + '</td>' +
                         '<td align="right">' + producto.precio + '</td>' +
                         // Mostrar miniatura de la imagen
                         '<td><img src=https://www.pythonanywhere.com/user/JhonyAKD/files/home/JhonyAKD/mysite/static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>';

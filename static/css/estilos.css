@@ -81,11 +81,11 @@ table {
     margin: 0 auto;
     padding: 20px;
     border: 1px solid lightslategray;
-    border-radius: 5px;
     border-collapse:inherit !important;
     border-radius: 15px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(rgba(0, 0, 0, 0.400), rgba(0, 0, 0, 0.400)), url(../../assets/img/Banner3.JPG);
+    text-align: center;
 }
 
 label {
